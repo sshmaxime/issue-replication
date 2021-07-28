@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./"
+    },
+    "include": ["./test", "./tasks", "./components"],
+    "files": ["./hardhat.config.ts"],
+    "paths": {}
+}
