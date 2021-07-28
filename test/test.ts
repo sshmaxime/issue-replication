@@ -2,8 +2,8 @@ import { ethers } from 'hardhat';
 
 import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers';
 
-import Contracts from 'components/Contracts';
-import { Alpha } from 'typechain';
+import Contracts from '../components/Contracts';
+import { Alpha } from '../typechain';
 
 let alpha: Alpha;
 

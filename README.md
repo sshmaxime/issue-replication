@@ -13,3 +13,16 @@ Error: `Error in plugin solidity-coverage: TypeError: typechain_1.glob is not a 
 -   `yarn clean`
 -   `yarn coverage`
 -   `yarn coverage`
+
+# Fix
+
+The problem seems to be **tsconfig-paths/register**.
+
+To fix:
+
+-   By removing `tsconfig-paths/register` from `hardhat.config.ts`.
+-   By removing any path mappings set before and go back to ugly path `../../../typechain`
+
+## What's next ?
+
+There is a problem with `tsconfig-paths/register` it doesn't work optimaly with `solidity-coverage` and potentially other plugins.
